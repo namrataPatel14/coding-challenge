@@ -1,0 +1,46 @@
+/* -----------Grid layout--------- */
+.grid-layout{
+    display: grid;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    max-width: 900px;
+}
+.grid-layout > div {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  .gridE {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  /* -----------flex layout--------- */
+  .flex-layout {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.flex-layout > div{
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}
+.flexA , .flexB{
+    flex: 0 0 49.44%;
+}
+.flexE{
+    flex: 0 0 100% ;
+}
+.flexC{
+    flex: 0 0 20%
+}
+.flexD{
+    flex: 0 0 78.888%
+}
