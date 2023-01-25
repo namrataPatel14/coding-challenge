@@ -1,0 +1,125 @@
+.about{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+}
+.bg-img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: #64ffda;
+    top: 50%;
+    left: 0;
+    border-radius: 100px;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .2;
+}
+.headingContainer {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headingContainer h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #101431;
+    padding-left: 22px;
+    padding-right: 22px;
+    z-index: 99;
+    margin-left: 10%;
+    font-weight: 200;
+}
+.aboutContainer p {
+    /* color: rgb(195, 232, 141); */
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 30px;
+    line-height: 25px;
+   
+}
+.aboutContainer p span{
+    color: #64ffda;
+    font-weight: 600;
+}
+.aboutContainer {
+    background: #272c34;
+    padding: 15px 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #cccccc5e;
+}
+.headerContainer {
+    padding: 10px 0 15px;
+    display: flex;
+    border-bottom: 1px solid #000;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    border-radius: 100px;
+    margin-right:10px;
+    background-color: red;
+}
+.headerContainer div:first-child{
+    background-color:rgb(255, 95, 86)
+}
+.headerContainer div:nth-child(2){
+    background-color:rgb(255, 189, 46)
+}
+.headerContainer div:last-child{
+    background-color:rgb(39, 201, 63)
+}
+.headingContainer::before{
+   content: '';
+   height: 1px;
+   width: 100%;
+   background-color: #64ffda;
+   position: absolute;
+   top: 53%;
+}
+.languagesContainer{
+    border-top: 1px solid #ffffff1c;
+}
+.languagesContainer p {
+    /* color: rgb(195, 232, 141); */
+    padding: 0 30px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: #64ffda;
+   
+}
+
+.languagesContainer ul {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px 50px;
+    overflow: hidden;
+    list-style: none;
+    color: #fff;
+    position: relative;
+}
+
+.languagesContainer ul li {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    position: relative;
+    padding-left: 22px;
+}
+.languagesContainer ul li span{
+    color: #64ffda;
+}
+.languagesContainer ul li:after{
+    content: "<>";
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: -1px;
+    color: #64ffda;
+    position: absolute;
+}

@@ -1,0 +1,123 @@
+.experience .headingContainer{
+    justify-content: right;
+}
+.experience .headingContainer h1 {
+    margin-right: 10%;
+    margin-left: 0;
+}
+.expContainer{
+    padding: 50px 0;
+}
+.exp-content{
+  background-color: #000;
+  color: #ccc;
+  border-radius: 10px;
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 15px;
+  border: 1px dotted #ccc;
+}
+.exp-wrapper{
+  /* padding: 5px 30px; */
+  /* border-style: dashed solid; */
+  border-top: 1px dashed #ccc;
+  /* border-bottom: 1px dashed #ccc; */
+  height: 0;
+  transition: all cubic-bezier(.4,0,.2,1) .6s;
+  overflow: hidden;
+  opacity: 0;
+ 
+}
+.exp-wrapper-inner{
+    padding: 5px 30px;
+}
+.exp-title {
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 54px;
+  position: relative;
+  transition: all cubic-bezier(.4,0,.2,1) .6s;
+  
+}
+.exp-title button{
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+}
+.yellow-button{
+  background-color:rgb(255, 189, 46)
+}
+.green-button{
+  background-color:rgb(39, 201, 63)
+}
+.exp-title p{
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.exp-title p span{
+    color: #64ffda;
+    font-weight: 600;
+}
+
+.active{
+  height: auto;
+  visibility: visible;
+  opacity: 1 ;
+ }
+ .grid-Wrapper{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 300px 1fr;
+  padding: 6px 0;
+ }
+ .grid-title span{
+  position: relative;
+  padding-left: 10px;
+ }
+ .grid-title span:after{
+  position: absolute;
+  content: ">";
+ }
+ .grid-title span:before{
+  position: absolute;
+  content: "<";
+  left:0
+ }
+ .grid-content.dev-text{
+  color: #03c2c2;
+ }
+ .grid-content.location{
+  color: purple;
+ }
+ .grid-content ul.res-list{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+ }
+ .grid-content ul.res-list li{
+  position: relative;
+  padding-left: 25px;
+ }
+ .grid-content ul.res-list li:before{
+  position: absolute;
+  content: "--";
+  left: 0;
+ }
+ .grid-content ul.tech-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(140px, 200px));
+  gap: 0px 10px;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+  color: #00b400;
+}

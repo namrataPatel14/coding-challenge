@@ -1,0 +1,155 @@
+/* main container */
+.loader {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: hideAnimation 0s ease-in 3s;
+    animation-fill-mode: forwards;
+} 
+@keyframes hideAnimation {
+    to {
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+}
+.loader::after {
+    content: '';
+    position: absolute;
+    background-color: #171c43;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    animation: slide-right .4s ease-out;
+    animation-delay: 2.6s;
+}
+
+.loader::before {
+    content: '';
+    position: absolute;
+    background-color: #171c43;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    animation: slide-left .4s ease-out;
+    animation-delay: 2.6s;
+}
+
+@keyframes slide-right {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-left {
+    to {
+        transform: translateX(100%);
+    }
+}
+/* icon  */
+.loader-animation {
+    color: #00EAD3;
+}
+
+.loader-animation.left {
+    animation: left 3s ease-in-out;
+    margin-right: -10px;
+}
+
+.loader-animation.right {
+    animation: right 3s ease-in-out;
+    margin-left: -10px;
+}
+
+.line {
+    height: 12px;
+    width: 12px;
+    background: radial-gradient(#00EAD3,#64ffda);
+    animation: line-width 3s ease;
+    border-radius: 100%;
+    margin: 0 8px;
+}
+
+@keyframes left {
+    0% {
+        transform: translateX(25px);
+    }
+
+    25% {
+        transform: translateX(95px);
+    }
+
+    50% {
+        transform: translateX(-85px);
+    }
+
+    75% {
+        transform: translateX(-150px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes right {
+    0% {
+        transform: translateX(-25px);
+    }
+
+    25% {
+        transform: translateX(-95px);
+    }
+
+    50% {
+        transform: translateX(85px);
+    }
+
+    75% {
+        transform: translateX(150px);
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+}
+
+@keyframes line-width {
+    0% {
+        width: 0px;
+        height: 0;
+        opacity: .1;
+    }
+
+    25% {
+        width: 15px;
+        height: 15px;
+        opacity: .6;
+    }
+
+    50% {
+        width: 18px;
+        height: 18px;
+        opacity: .8;
+    }
+
+    75% {
+        width: 21px;
+        height: 21px;
+        opacity: 1;
+    }
+
+    100% {
+        width: 0px;
+        height: 0;
+        opacity: 0
+    }
+}

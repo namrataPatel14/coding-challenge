@@ -1,0 +1,53 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 100%;
+    min-height: 80px;
+    background-color: #101431;
+    z-index: 99;
+    animation: fade-in 1s ease-in-out;
+}
+nav button{
+    display: none;
+}
+.navigation-menu ul{
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+}
+.navigation-menu ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+    margin-left: 30px;
+    transition: .7s ease-in-out;
+}
+.navigation-menu ul li a:hover{
+    color: #64ffda;
+}
+.navigation-menu ul li a span{
+    color: #64ffda;
+}
+.brand{
+  color: #fff;
+}
+.logo{
+  font-size: 40px;
+  transform: scale(1);
+  transition: .8s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.3);
+    color: #64ffda;
+}
+@keyframes fade-in{
+    from { opacity: 0; }
+}
